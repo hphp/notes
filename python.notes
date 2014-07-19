@@ -1,0 +1,56 @@
+====update time 2014-07-19 ============
+1. str
+1.1 join
+1.1.1 os.path.join(a,b,c,d) , and if b is an abs path, previous will be ignored
+1.1.2 ".".join((a,b,c,d)) - seperator.join(iterable[like list])
+1.2 python 单双引号区别 - quotes
+strng = 'dsfdsfs"sdfdsfs"dfs' + "dfdsfdsfsd'dfdss'sdfdfsdf" + "dfsd" - dsfdsfs"sdfdsfs"dfsdfdsfdsfsd'dfdss'sdfdfsdfdfsd
+1.3 format
+"sfdsfdsfds_{0}".format(var)
+1.4 json
+json.keys()
+2 IO
+2.1 file
+python read line from file
+python readline while
+def read_file():
+    content = "ff"
+    f = open(content,'r+')
+    l = f.readlines()
+    for ele in l:
+        print ele
+    f.close()
+    f = open(content,'r+')
+    while True:
+        line = f.readline()
+        if not line:
+            break
+        first_part = line.split("\n")[0]
+    f.close()
+
+3. Iterator
+generator, yield
+
+内置库
+1. cgi
+urllib
+urllib. urlencode(), urllib.quote(), urllib.urlopen()
+md5
+md5.new(), md5.update(), md5.hexdigest()
+其他库
+requests
+requests, requests.post(url, headers, params)
+httplib
+connector
+connector.cursor.execute()
+execute(statement), execute('commit'), 多语句：multi=true
+================================================================================
+
+2013-05-11
+python array a[0,1,2] a = [[0,0],[0,1]]
+python random random.random() random.randrange(10)
+for x.py import x no .py
+while 1: ; if : else: ; #!/usr/bin/python; int() ; len(); time.sleep();print a,b; str.split(',')
+f = open('a','r+')
+for line of f :
+     print line
